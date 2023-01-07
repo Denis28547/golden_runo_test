@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./components/Navbar.jsx";
+import { FirstBlock } from "./components/FirstBlock.jsx";
+import { SecondBlock } from "./components/SecondBlock.jsx";
+import { ThirdBlock } from "./components/ThirdBlock.jsx";
+import { FourthBlock } from "./components/FourthBlock.jsx";
+import { Stripe } from "./components/Stripe.jsx";
+import { FifthBlock } from "./components/FifthBlock.jsx";
+import { Footer } from "./components/Footer.jsx";
+
+import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <FirstBlock />
+      <SecondBlock />
+      <ThirdBlock />
+      <FourthBlock />
+      <Stripe />
+      <FifthBlock />
+      <Footer />
     </div>
   );
 }

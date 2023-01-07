@@ -1,0 +1,83 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--gold-color);
+  padding: 30px 15px;
+  row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.top_nav {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav_title {
+  font-size: 2rem;
+  font-family: "Playfair Display";
+}
+
+.icons_container {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  cursor: pointer;
+}
+
+.thing_container {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.flex_end {
+  justify-self: end;
+}
+
+.categories {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-text-color);
+}
+
+.categories p {
+  height: 100%;
+  cursor: pointer;
+}
+
+.categories::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: calc(100% + 20px);
+  left: 0;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #e6e6e6 0%,
+    rgba(230, 230, 230, 0.22) 93.23%,
+    rgba(230, 230, 230, 0) 100%
+  );
+  border-radius: 6px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: radial-gradient(50% 50% at 50% 50%, #935b28 0%, #935b28 92.19%);
+  border-radius: 6px;
+}

@@ -1,0 +1,36 @@
+.secondBlock {
+  display: flex;
+  column-gap: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.secondBlock_block {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  align-items: center;
+}
+
+.secondBlock_block > h3 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.secondBlock_block > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--small-items-color);
+  cursor: pointer;
+  width: fit-content;
+  border-bottom: 1px solid var(--small-items-color);
+}
+
+.secondBlock_block_reversed {
+  flex-direction: column-reverse;
+}

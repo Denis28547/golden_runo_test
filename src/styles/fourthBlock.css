@@ -1,0 +1,60 @@
+.fourthBlock_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+.fourthBlock_item {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fourthBlock_item_img {
+  width: 100%;
+  height: 215px;
+}
+
+.fourthBlock_item_collection {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.fourthBlock_item_title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.fourthBlock_item_description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--small-items-color);
+}
+
+.fourthBlock_item_go_to {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--small-items-color);
+  cursor: pointer;
+  width: fit-content;
+  border-bottom: 1px solid var(--small-items-color);
+}
+
+.fourthBlock_load_more_button {
+  margin-top: 50px;
+  width: 320px;
+  height: 51px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  background: var(--gold-color);
+  border: 1px solid var(--gold-color);
+  margin-bottom: 80px;
+}
